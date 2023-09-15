@@ -21,8 +21,8 @@ body {
 .header-cv {
     width: 100%;
     background-color: #1e3472;
-    padding-top: .6rem; 
-    padding-bottom: .6rem; 
+    padding-top: .6rem;
+    padding-bottom: .6rem;
     z-index: 1;
 
 
@@ -97,8 +97,8 @@ body {
 }
 
 .div-img img {
-    height: 23rem;
-    width: 23rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 13rem;
     box-shadow: 0 0 30px #000000;
     object-fit: cover;
@@ -176,18 +176,21 @@ main {
 }
 
 .section-main-home {
+    /* border: 2px solid red; */
     width: 100%;
     height: auto;
 
 }
 
 .cards {
+    /* border: 2px solid red; */
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
 .our-services {
+    /* border: 2px solid red; */
     font-size: 2.5rem;
     display: flex;
     justify-content: center;
@@ -211,9 +214,8 @@ main {
     background-color: #2b2a2a;
     margin: 1rem;
     padding: 2rem;
-    width: 25rem;
+    width: 22rem;
     height: auto;
-    overflow: hidden;
     text-align: center;
     border: 4px solid transparent;
     transition: 0.4s;
@@ -229,22 +231,31 @@ main {
 
 .fa-solid {
     color: #1e3472;
-    font-size: 4rem;
+    font-size: 3rem;
+    /* border: 2px solid red; */
 }
 
 .title-card {
+    /* border: 2px solid red; */
     margin: 1rem;
 }
 
 .container-card p {
-    margin: 2rem;
+    margin-bottom: 2rem;
+    /* border: 2px solid red; */
+
+
 }
 
 .read-more {
+    margin: 1rem;
+
+    /* border: 2px solid red; */
+
     text-decoration: none;
     background-color: #1e3472;
     color: inherit;
-    padding: 1rem;
+    padding: .7rem;
     border-radius: 2rem;
     box-shadow: 0px 0px 10px #1e3472;
     transition: 0.4s;
@@ -266,12 +277,17 @@ main {
 }
 
 .section-project {
+    /* border: 2px solid red; */
     width: 100%;
     height: auto;
     background-color: #2b2a2a;
     text-align: center;
 
 
+}
+
+.section-project h2 {
+    /* border: 2px solid red; */
 }
 
 .section-project b {
@@ -335,16 +351,27 @@ section {
 }
 
 .section-form {
+    /* border: 2px solid red; */
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     text-align: center;
-
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
 }
 
+form {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 4px double #1e3472;
+    width: auto;
+    height: auto;
+    background-color: #2b2a2a;
+}
+
 .section-form h2 {
-    margin-bottom: 4rem;
     font-size: 3rem;
 
 }
@@ -358,9 +385,11 @@ section {
     width: 25rem;
     height: 1.6rem;
 }
+.section-form div{
 
-.section-form input,
-textarea {
+}
+
+.section-form input,textarea {
     color: #ffffff;
     padding: 1rem;
     border-radius: .5rem;
@@ -368,7 +397,8 @@ textarea {
     margin: .5rem;
     font-size: 1.2rem;
     font-family: cursive;
-    background-color: #2b2a2a;
+    background-color: #4a4747;
+    opacity: .6 ;
 
 }
 
@@ -429,7 +459,10 @@ footer a:hover {
     box-shadow: 0 0 10px #fff;
 }
 
-@media(max-width:1279px) {
+@media(max-width:1088px) {
+    .information {
+        text-align: center;
+    }
 
 }
 
@@ -447,10 +480,15 @@ footer a:hover {
     }
 
     .img-project {
-        width: 20rem;
+        width: 28rem;
     }
 
-    .information {}
+    .container-card {
+        width: 35rem;
+
+    }
+
+
 
     .texto-oculto {
         width: 100%;
@@ -458,11 +496,39 @@ footer a:hover {
 
     textarea {
         width: 25rem;
-        height: ;
+
     }
+}
+@media (max-width:942px){
+    /* .section-form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30rem;
+
+    }
+    .section-form div{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .section-form input{
+        width: 23rem;
+    }
+    textarea{
+        width: 23rem;
+    }
+
 }
 
 @media (max-width:768px) {
+
     .portfolio {
         margin: 0;
     }
@@ -471,34 +537,27 @@ footer a:hover {
         width: 98%;
         display: flex;
         flex-direction: column;
+
     }
 
     .navbar {
-        margin: 0;
+
         width: 98%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
     }
-
-    .information h2,
-    p {
-        font-size: 1.4rem;
-        font-weight: 100;
-    }
-
-    .information h1 {
-        font-size: 2.1rem;
-        line-height: 3rem;
-
-    }
-
-    textarea {
+    form{
         width: 25rem;
-        height: ;
     }
-}
+    .section-form input {
+        width: 21rem;
+    }
+    textarea{
+        width: 21rem;
+    }
 
+}
 @media (max-width:480px) {
     .portfolio {
         margin: 0;
@@ -507,13 +566,13 @@ footer a:hover {
     .container-navbar {
         width: 98%;
         display: flex;
-        flex-direction: column;
+
     }
 
     .navbar {
         width: 98%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
 
     }
@@ -538,11 +597,14 @@ footer a:hover {
     }
 
     .section-form input {
-        width: 18rem;
+        width: 15rem;
+    }
+    form{
+        width: 19rem;
     }
 
     textarea {
-        width: 18rem;
+        width: 15rem;
 
     }
 
