@@ -561,9 +561,12 @@ footer a:hover {
 @media (max-width:480px) {
     .portfolio {
         margin: 0;
+        
     }
 
     .container-navbar {
+        align-items: center;
+
         width: 98%;
         display: flex;
 
@@ -574,6 +577,7 @@ footer a:hover {
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding-left: 3rem;
 
     }
 
@@ -589,7 +593,7 @@ footer a:hover {
     }
 
     .img-project {
-        width: 20rem;
+        width: 24rem;
     }
 
     .texto-oculto {
